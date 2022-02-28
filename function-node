@@ -1,6 +1,6 @@
  var st_len = msg.payload["BATCH_NO.LEN"];
  var str_final = "";
-  var k = "";
+ var k = "";
  var char_1 = 0;
 
  for (let i = 0; i < st_len; i++) {

@@ -1,0 +1,15 @@
+ var st_len = msg.payload["BATCH_NO.LEN"];
+ var str_final = "";
+  var k = "";
+ var char_1 = 0;
+
+ for (let i = 0; i < st_len; i++) {
+     k = "BATCH_NO.DATA[" + i + "]";
+     char_1 = msg.payload[k];
+     str_final += String.fromCharCode(char_1);
+ }
+
+
+ msg.payload = str_final;
+
+ return msg;

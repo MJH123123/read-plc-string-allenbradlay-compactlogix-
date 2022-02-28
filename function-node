@@ -9,7 +9,6 @@
      str_final += String.fromCharCode(char_1);
  }
 
-
  msg.payload = str_final;
 
  return msg;
